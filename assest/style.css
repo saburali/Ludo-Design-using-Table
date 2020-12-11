@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: top;
+    background-image: url(bg.jpg);
+}
+
+.bg-color {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.display {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ludo Design */
+table {
+    border-collapse: collapse;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgab(0,0,0,0.16),
+                0 3px 6px rgab(0,0,0,0.23);
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: white;
+}
+
+/* Guti Home */
+.one,
+.two,
+.three,
+.four {
+    border-radius: 0;
+    position: relative;
+}
+
+.one {
+    background-color: #e74c3c;
+    border-top-left-radius: 25px;
+}
+
+.two {
+    background-color: #2ecc71;
+    border-top-right-radius: 25px;
+}
+
+.three {
+    background-color: #8e44ad;
+    border-bottom-left-radius: 25px;
+}
+
+.four {
+    background-color: #f39c12;
+    border-bottom-right-radius: 25px;
+}
+
+/* Guti Setup */
+.one span,
+.two span,
+.three span,
+.four span {
+    position: absolute;
+}
+
+.one span i,
+.two span i,
+.three span i,
+.four span i {
+    font-size: 35px;
+    text-shadow: 2px 2px 2px rgba(255,255,255, 1);
+}
+
+/* Guti Color */
+.one span {
+    color: #b62616;
+}
+
+.two span {
+    color: #219150;
+}
+
+.three span {
+    color: #5a2b6e;
+}
+
+.four span {
+    color: #aa6c09;
+}
+
+/* Guti Position */
+.one .guti-1,
+.two .guti-1,
+.three .guti-1,
+.four .guti-1 {
+    top: 60px;
+    left: 60px;
+}
+
+.one .guti-2,
+.two .guti-2,
+.three .guti-2,
+.four .guti-2 {
+    top: 60px;
+    right: 60px;
+}
+
+.one .guti-3,
+.two .guti-3,
+.three .guti-3,
+.four .guti-3 {
+    bottom: 60px;
+    left: 60px;
+}
+
+.one .guti-4,
+.two .guti-4,
+.three .guti-4,
+.four .guti-4 {
+    bottom: 60px;
+    right: 60px;
+}
+
+/* Guti Road */
+table tr:nth-child(1) td:nth-child(2),
+table tr:nth-child(7) td:nth-child(1),
+table tr:nth-child(7) td:nth-child(8),
+table tr:nth-child(10) td:nth-child(2) {
+    border-top-left-radius: 0;
+}
+
+table tr:nth-child(1) td:nth-child(4),
+table tr:nth-child(7) td:nth-child(6),
+table tr:nth-child(7) td:nth-child(13),
+table tr:nth-child(10) td:nth-child(4) {
+    border-top-right-radius: 0;
+}
+
+table tr:nth-child(6) td:nth-child(1),
+table tr:nth-child(9) td:nth-child(1),
+table tr:nth-child(9) td:nth-child(7),
+table tr:nth-child(15) td:nth-child(1) {
+    border-bottom-left-radius: 0;
+}
+
+table tr:nth-child(6) td:nth-child(3),
+table tr:nth-child(9) td:nth-child(6),
+table tr:nth-child(9) td:nth-child(12),
+table tr:nth-child(15) td:nth-child(3) {
+    border-bottom-right-radius: 0;
+}
+
+/* Winner */
+table tr:nth-child(7) td:nth-child(7){
+    background-color: transparent;
+}
+
+.winner {
+    border-radius: 50%;
+    border-left: 60px solid #e74c3c;
+    border-top: 60px solid #2ecc71;
+    border-bottom: 60px solid #8e44ad;
+    border-right: 60px solid #f39c12;
+}
+
+.winner::before {
+    content: "🏆";
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0  1rem 0 rgba(0,0,0,0.24);
+}
+
+/* Safe Zone */
+table tr:nth-child(8) td:nth-child(2),
+table tr:nth-child(8) td:nth-child(3),
+table tr:nth-child(8) td:nth-child(4),
+table tr:nth-child(8) td:nth-child(5),
+table tr:nth-child(8) td:nth-child(6),
+.star-2 {
+    border-radius: 50%;
+    background-color: #e74c3c;
+}
+
+table tr:nth-child(2) td:nth-child(2),
+table tr:nth-child(3) td:nth-child(2),
+table tr:nth-child(4) td:nth-child(2),
+table tr:nth-child(5) td:nth-child(2),
+table tr:nth-child(6) td:nth-child(2),
+.star-1{
+    border-radius: 50%;
+    background-color: #2ecc71;
+}
+
+table tr:nth-child(8) td:nth-child(11),
+table tr:nth-child(8) td:nth-child(10),
+table tr:nth-child(8) td:nth-child(9),
+table tr:nth-child(8) td:nth-child(8),
+table tr:nth-child(8) td:nth-child(7),
+.star-3{
+    border-radius: 50%;
+    background-color: #f39c12;
+}
+
+table tr:nth-child(14) td:nth-child(2),
+table tr:nth-child(13) td:nth-child(2),
+table tr:nth-child(12) td:nth-child(2),
+table tr:nth-child(11) td:nth-child(2),
+table tr:nth-child(10) td:nth-child(3),
+.star-4{
+    border-radius: 50%;
+    background-color: #8e44ad;
+}
+
+/* Guti Station */
+.star-1,
+.star-2,
+.star-3,
+.star-4 {
+    position: relative;
+}
+
+.star-1 i,
+.star-2 i,
+.star-3 i,
+.star-4 i {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
